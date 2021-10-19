@@ -31,11 +31,11 @@ jobs:
           node --version
           npm --version
           which npm
-          sudo npm install -g npm@latest
+          sudo npm install --force -g npm@latest
           npm --version
           which npm
           npm set progress=false
-          npm --dd update
+          npm --dd --force update
   # This workflow contains a single job called "build"
   build-20:
     # The type of runner that the job will run on
@@ -53,8 +53,8 @@ jobs:
           node --version
           npm --version
           which npm
-          sudo npm install -g npm@latest
+          sudo npm install --force -g npm@latest
           npm --version
           which npm
           npm set progress=false
-          npm -dd update
+          npm -dd --force update
