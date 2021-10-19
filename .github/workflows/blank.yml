@@ -28,7 +28,12 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd src
+          node --version
           npm --version
+          which npm
+          npm install -g npm@latest
+          npm --version
+          which npm
           npm set progress=false
           npm --dd update
   # This workflow contains a single job called "build"
@@ -45,6 +50,11 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd src
+          node --version
           npm --version
+          which npm
+          npm install -g npm@latest
+          npm --version
+          which npm
           npm set progress=false
           npm -dd update
