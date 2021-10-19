@@ -29,7 +29,8 @@ jobs:
         run: |
           cd src
           npm --version
-          npm --ddd update
+          npm set progress=false
+          npm --dd update
   # This workflow contains a single job called "build"
   build-20:
     # The type of runner that the job will run on
@@ -45,4 +46,5 @@ jobs:
         run: |
           cd src
           npm --version
-          npm -ddd update
+          npm set progress=false
+          npm -dd update
