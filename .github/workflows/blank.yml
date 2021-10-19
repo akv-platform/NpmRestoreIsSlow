@@ -28,7 +28,8 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd src
-          npm --dd update
+          npm --version
+          npm --ddd update
   # This workflow contains a single job called "build"
   build-20:
     # The type of runner that the job will run on
@@ -43,4 +44,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd src
-          npm -dd update
+          npm --version
+          npm -ddd update
