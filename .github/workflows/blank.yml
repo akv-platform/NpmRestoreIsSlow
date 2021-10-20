@@ -29,11 +29,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd src
-          node --version
-          npm --version
-          which npm
-          sudo npm install -g npm@7
-          npm --version
-          which npm
-          # npm set progress=false
-          npm -dd --force update
+          yarn -dd --force update
